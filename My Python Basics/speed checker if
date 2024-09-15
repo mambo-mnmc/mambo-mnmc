@@ -1,0 +1,23 @@
+def dscheck(speed):
+    points=0
+    for u in range (70, speed, 5):
+        if speed >= 75:
+            points = points + 1
+            while points > 12:
+                result="License Suspended"
+                break
+    print (result)
+    print("demerit point", points)
+    if speed <= 70:
+        result = "Ok"
+        print(result)
+    else:
+        maxspdlimit=201
+        for sp''d in range (71, maxspdlimit, 6):
+            curspd=speed
+        print("driving above par, at", curspd, "km/h, <>")
+    return
+    
+    
+speed = int(input("enter driver speed: "))
+dscheck(speed)
