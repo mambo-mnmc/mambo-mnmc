@@ -1,0 +1,18 @@
+def dscheck(speed):
+    if speed < 70:
+        result= "Ok"
+        print(result)
+        
+        points=0
+        for KiloM in range (70, speed, 5):
+            if speed >= 75:
+                points = points + 1
+                print(points)
+                while points > 12:
+                    result = "License Suspended"
+                    print (result)
+                    continue
+                    
+    return
+speed = int(input("enter driver speed"))
+dscheck(speed)
