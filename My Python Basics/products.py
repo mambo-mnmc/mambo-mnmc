@@ -1,0 +1,13 @@
+prod=open("product.txt", "a")
+prod.write("\n")
+N_of_Products=input("Enter The Number of Products")
+prod.write(N_of_Products)
+prod.write(": ")
+Prod_Price=input("Enter the Price of your Products")
+prod.write(Prod_Price)
+prod.write("\n")
+prod.close()
+
+print()
+prod=open("product.txt", "r")
+print(prod.read())
